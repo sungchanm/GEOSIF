@@ -7,16 +7,16 @@ import shap
 import matplotlib.pyplot as plt
 
 # Load data from .mat files
-input_sif = loadmat('/esail1/sungchan/GEOSIF/V10/ALLSKY_GK2A_757.mat')['all_sif']
-input_air = loadmat('/esail1/sungchan/GEOSIF/V10/ALLSKY_GK2A_757.mat')['all_air']
-input_vpd = loadmat('/esail1/sungchan/GEOSIF/V10/ALLSKY_GK2A_757.mat')['all_vpd'] / 100
-input_rad = loadmat('/esail1/sungchan/GEOSIF/V10/ALLSKY_GK2A_757.mat')['all_rad']
+input_sif = loadmat('geo_samples.mat')['all_sif']
+input_air = loadmat('geo_samples.mat')['all_air']
+input_vpd = loadmat('geo_samples.mat')['all_vpd'] / 100
+input_rad = loadmat('geo_samples.mat')['all_rad']
 
-input_red = loadmat('/esail1/sungchan/GEOSIF/V10/ALLSKY_GK2A_757.mat')['all_red']
-input_nir = loadmat('/esail1/sungchan/GEOSIF/V10/ALLSKY_GK2A_757.mat')['all_nir']
-input_blu = loadmat('/esail1/sungchan/GEOSIF/V10/ALLSKY_GK2A_757.mat')['all_blu']
-input_gre = loadmat('/esail1/sungchan/GEOSIF/V10/ALLSKY_GK2A_757.mat')['all_gre']
-input_lc = loadmat('/esail1/sungchan/GEOSIF/V10/ALLSKY_GK2A_757.mat')['all_lc']
+input_red = loadmat('geo_samples.mat')['all_red']
+input_nir = loadmat('geo_samples.mat')['all_nir']
+input_blu = loadmat('geo_samples.mat')['all_blu']
+input_gre = loadmat('geo_samples.mat')['all_gre']
+input_lc = loadmat('geo_samples.mat')['all_lc']
 
 # Stack all features together
 all_features = np.hstack([input_sif, input_air, input_vpd, input_rad, input_nir, input_red, input_gre, input_blu, input_lc])
