@@ -1,8 +1,6 @@
 # GEOSIF (https://doi.org/10.1016/j.rse.2024.114284)
 GEOSIF: A continental-scale sub-daily reconstructed solar-induced fluorescence derived from OCO-3 and GK-2A over Eastern Asia and Oceania (Jeong et al., 2024).
 
-# GEOSIF.py
-
 This repository contains code for training an XGBoost regression model to predict SIF using four-band spectral reflectance, shortwave radiation, and vapor pressure deficit. 
 It also includes functionality for hyperparameter tuning and SHAP analysis to interpret model predictions.
 
